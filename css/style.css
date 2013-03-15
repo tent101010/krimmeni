@@ -89,9 +89,10 @@ body:after {
   color: #3a95fb;
 }
 html {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
 }
 h1,
 h2,
@@ -105,7 +106,7 @@ h6 {
 }
 p {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 a {
   color: #3a95fb;
@@ -121,4 +122,29 @@ textarea {
   color: #000;
 }
 @media screen and (max-width: 705px), (max-device-width: 705px) {
+}
+body {
+  background: #020203 url("../images/bg_vert.png") repeat-x;
+}
+#bg {
+  background: url("../images/bg.jpg") no-repeat 0 0;
+}
+h1 {
+  font-family: 'TradeGothicW01-BoldCn20 675334';
+/*
+  font-family:'Trade Gothic W01 Bold 2';
+  font-family:'Trade Gothic W01 Bold';
+  font-family:'Trade Gothic W01 Light';
+  font-family:'TradeGothicW01-LightObl';
+  font-family:'Trade Gothic W01 Roman';
+  font-family:'Trade Gothic W01 Obl';
+  font-family:'TradeGothicW01-BoldObl';
+  font-family:'TradeGothicW01-Bold2Obl';
+  font-family:'Trade Gothic W01 Cn 18';
+  font-family:'TradeGothicW01-Cn18Obl';
+  font-family:'TradeGothicW01-BoldCn20 675337';
+  font-family:'TradeGothicW01-Extended';
+  font-family:'TradeGothicW01-BoldExte';
+  */
+  font-size: 54px;
 }
