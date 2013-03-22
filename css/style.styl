@@ -2,11 +2,108 @@
 @import 'jeet/goodies'
 @import 'jeet/typography'
 
-
-
-
-
 // Mobile
 bp()
 
 endbp()
+
+body
+  background #020203 url(../images/bg_vert.png) repeat-x
+
+#bg
+  background url(../images/bg.jpg) no-repeat 0 0
+  col(24)
+  height 850px
+
+section
+  col(24)
+  aside
+    col(5)
+    &:first-child
+      margin-right 0
+  div
+    col(14)
+    height 429px
+    margin-top 149px
+  strong
+    font-family:'TradeGothicW01-BoldCn20 675334';
+  a
+    color #f36e21
+    &:hover
+      color #fff
+
+header
+  height 72px
+  margin-top 30px
+  margin-bottom 23px
+  > aside
+    col(1)
+  > div.lt
+    col(3)
+    border-bottom:solid 1px #939598
+    height 72px
+  > div.logo
+    background url(../images/logo.gif) no-repeat bottom
+    col(2)
+    height 94px
+  > div.tagline
+    border-bottom:solid 1px #939598
+    col(12)
+    height 72px
+    padding-top 42px
+    margin-right 0
+  > div.pag
+    border-bottom:solid 1px #939598
+    col(5)
+    height 30px
+    margin-top 42px
+    a
+      background url(../images/sprite.png) no-repeat 0 0
+      display block
+      float left
+      height 17px
+      margin-right 7px
+      width 17px
+      &.off
+        background-position -25px -25px
+        &:hover
+          background-position -50px -50px
+
+h1
+  font-family:'TradeGothicW01-BoldCn20 675334';
+  /*
+  font-family:'Trade Gothic W01 Bold 2';
+  font-family:'Trade Gothic W01 Bold';
+  font-family:'Trade Gothic W01 Light';
+  font-family:'TradeGothicW01-LightObl';
+  font-family:'Trade Gothic W01 Roman';
+  font-family:'Trade Gothic W01 Obl';
+  font-family:'TradeGothicW01-BoldObl';
+  font-family:'TradeGothicW01-Bold2Obl';
+  font-family:'Trade Gothic W01 Cn 18';
+  font-family:'TradeGothicW01-Cn18Obl';
+  font-family:'TradeGothicW01-BoldCn20 675337';
+  font-family:'TradeGothicW01-Extended';
+  font-family:'TradeGothicW01-BoldExte';
+  */
+  font-size 54px
+
+h2
+  font-size 26px
+  margin-top 42px
+
+h3
+  text-align center
+  font-family:'Trade Gothic W01 Cn 18';
+  font-size 18px
+  strong
+    font-family:'TradeGothicW01-BoldCn20 675334';
+    
+footer
+  text-align center
+  > aside
+    col(1)
+  > p
+    border-top:solid 1px #939598
+    col(22)
+    padding-top 31px
