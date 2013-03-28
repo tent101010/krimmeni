@@ -4,7 +4,6 @@
 .DS_Store
 *.pyc
 *.pyo
-*.styl
 *.tgz
 *.[oa]
 *~
