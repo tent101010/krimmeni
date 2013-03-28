@@ -130,12 +130,11 @@ body {
 #bg {
   background: url("../images/bg.jpg") no-repeat 0 0;
   *zoom: 1;
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 2.127659574468085%;
-  *width: 97.84574468085106%;
-  *margin-right: 2.083333333333333%;
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 850px;
 }
 #bg:before,
@@ -146,89 +145,37 @@ body {
 #bg:after {
   clear: both;
 }
-#bg:last-child {
-  margin-right: 0;
-}
-section {
+header > div,
+section > div,
+footer > div {
   *zoom: 1;
-  display: inline;
-  float: left;
-  width: 100%;
-  margin-right: 2.127659574468085%;
-  *width: 97.84574468085106%;
-  *margin-right: 2.083333333333333%;
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-section:before,
-section:after {
+header > div:before,
+section > div:before,
+footer > div:before,
+header > div:after,
+section > div:after,
+footer > div:after {
   content: "";
   display: table;
 }
-section:after {
+header > div:after,
+section > div:after,
+footer > div:after {
   clear: both;
-}
-section:last-child {
-  margin-right: 0;
-}
-section aside {
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 19.148936170212767%;
-  margin-right: 2.127659574468085%;
-  *width: 18.679078014184398%;
-  *margin-right: 2.083333333333333%;
-}
-section aside:before,
-section aside:after {
-  content: "";
-  display: table;
-}
-section aside:after {
-  clear: both;
-}
-section aside:last-child {
-  margin-right: 0;
-}
-section aside:first-child {
-  margin-right: 0;
-}
-section div {
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 57.446808510638306%;
-  margin-right: 2.127659574468085%;
-  *width: 56.1790780141844%;
-  *margin-right: 2.083333333333333%;
-  height: 429px;
-  margin-top: 149px;
-}
-section div:before,
-section div:after {
-  content: "";
-  display: table;
-}
-section div:after {
-  clear: both;
-}
-section div:last-child {
-  margin-right: 0;
-}
-section strong {
-  font-family: 'TradeGothicW01-BoldCn20 675334';
-}
-section a {
-  color: #f36e21;
-}
-section a:hover {
-  color: #fff;
 }
 header {
   height: 72px;
   margin-top: 30px;
   margin-bottom: 23px;
 }
-header > aside {
+header div.logoLt {
+  border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
   float: left;
@@ -236,42 +183,43 @@ header > aside {
   margin-right: 2.127659574468085%;
   *width: 2.0124113475177303%;
   *margin-right: 2.083333333333333%;
+  height: 72px;
 }
-header > aside:before,
-header > aside:after {
+header div.logoLt:before,
+header div.logoLt:after {
   content: "";
   display: table;
 }
-header > aside:after {
+header div.logoLt:after {
   clear: both;
 }
-header > aside:last-child {
+header div.logoLt:last-child {
   margin-right: 0;
 }
-header > div.lt {
+header div.logoRt {
+  border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
   float: left;
-  width: 10.638297872340425%;
+  width: 2.127659574468085%;
   margin-right: 2.127659574468085%;
-  *width: 10.345744680851064%;
+  *width: 2.0124113475177303%;
   *margin-right: 2.083333333333333%;
-  border-bottom: solid 1px #939598;
   height: 72px;
+  margin-right: 0;
 }
-header > div.lt:before,
-header > div.lt:after {
+header div.logoRt:before,
+header div.logoRt:after {
   content: "";
   display: table;
 }
-header > div.lt:after {
+header div.logoRt:after {
   clear: both;
 }
-header > div.lt:last-child {
+header div.logoRt:last-child {
   margin-right: 0;
 }
-header > div.logo {
-  background: url("../images/logo.gif") no-repeat bottom;
+#logo {
   *zoom: 1;
   display: inline;
   float: left;
@@ -279,20 +227,20 @@ header > div.logo {
   margin-right: 2.127659574468085%;
   *width: 6.179078014184397%;
   *margin-right: 2.083333333333333%;
-  height: 94px;
+  height: 95px;
 }
-header > div.logo:before,
-header > div.logo:after {
+#logo:before,
+#logo:after {
   content: "";
   display: table;
 }
-header > div.logo:after {
+#logo:after {
   clear: both;
 }
-header > div.logo:last-child {
+#logo:last-child {
   margin-right: 0;
 }
-header > div.tagline {
+#tagline {
   border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
@@ -305,41 +253,41 @@ header > div.tagline {
   padding-top: 42px;
   margin-right: 0;
 }
-header > div.tagline:before,
-header > div.tagline:after {
+#tagline:before,
+#tagline:after {
   content: "";
   display: table;
 }
-header > div.tagline:after {
+#tagline:after {
   clear: both;
 }
-header > div.tagline:last-child {
+#tagline:last-child {
   margin-right: 0;
 }
-header > div.pag {
+nav {
   border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
   float: left;
-  width: 19.148936170212767%;
+  width: 23.404255319148938%;
   margin-right: 2.127659574468085%;
-  *width: 18.679078014184398%;
+  *width: 22.845744680851062%;
   *margin-right: 2.083333333333333%;
   height: 30px;
   margin-top: 42px;
 }
-header > div.pag:before,
-header > div.pag:after {
+nav:before,
+nav:after {
   content: "";
   display: table;
 }
-header > div.pag:after {
+nav:after {
   clear: both;
 }
-header > div.pag:last-child {
+nav:last-child {
   margin-right: 0;
 }
-header > div.pag a {
+nav a {
   background: url("../images/sprite.png") no-repeat 0 0;
   display: block;
   float: left;
@@ -347,11 +295,107 @@ header > div.pag a {
   margin-right: 7px;
   width: 17px;
 }
-header > div.pag a.off {
+nav a.off {
   background-position: -25px -25px;
 }
-header > div.pag a.off:hover {
+nav a.off:hover {
   background-position: -50px -50px;
+}
+section > div {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 61.702127659574465%;
+  margin-right: 2.127659574468085%;
+  *width: 60.34574468085106%;
+  *margin-right: 2.083333333333333%;
+  height: 429px;
+  margin-top: 149px;
+  margin-left: 12.76595744680851%;
+}
+section > div:before,
+section > div:after {
+  content: "";
+  display: table;
+}
+section > div:after {
+  clear: both;
+}
+section > div:last-child {
+  margin-right: 0;
+}
+section > div strong {
+  font-family: 'TradeGothicW01-BoldCn20 675334';
+}
+section > div a {
+  color: #f36e21;
+  white-space: nowrap;
+}
+section > div a:hover {
+  color: #fff;
+}
+footer > div {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 61.702127659574465%;
+  margin-right: 2.127659574468085%;
+  *width: 60.34574468085106%;
+  *margin-right: 2.083333333333333%;
+  *zoom: 1;
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 12.76595744680851%;
+  text-align: center;
+}
+footer > div:before,
+footer > div:after {
+  content: "";
+  display: table;
+}
+footer > div:after {
+  clear: both;
+}
+footer > div:last-child {
+  margin-right: 0;
+}
+footer > div:before,
+footer > div:after {
+  content: "";
+  display: table;
+}
+footer > div:after {
+  clear: both;
+}
+footer > div > p {
+  border-top: solid 1px #939598;
+  padding-top: 31px;
+}
+footer > div > p span {
+  white-space: nowrap;
+}
+.rt {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 23.404255319148938%;
+  margin-right: 2.127659574468085%;
+  *width: 22.845744680851062%;
+  *margin-right: 2.083333333333333%;
+}
+.rt:before,
+.rt:after {
+  content: "";
+  display: table;
+}
+.rt:after {
+  clear: both;
+}
+.rt:last-child {
+  margin-right: 0;
 }
 h1 {
   font-family: 'TradeGothicW01-BoldCn20 675334';
@@ -383,49 +427,4 @@ h3 {
 }
 h3 strong {
   font-family: 'TradeGothicW01-BoldCn20 675334';
-}
-footer {
-  text-align: center;
-}
-footer > aside {
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 2.127659574468085%;
-  margin-right: 2.127659574468085%;
-  *width: 2.0124113475177303%;
-  *margin-right: 2.083333333333333%;
-}
-footer > aside:before,
-footer > aside:after {
-  content: "";
-  display: table;
-}
-footer > aside:after {
-  clear: both;
-}
-footer > aside:last-child {
-  margin-right: 0;
-}
-footer > p {
-  border-top: solid 1px #939598;
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 91.48936170212765%;
-  margin-right: 2.127659574468085%;
-  *width: 89.51241134751774%;
-  *margin-right: 2.083333333333333%;
-  padding-top: 31px;
-}
-footer > p:before,
-footer > p:after {
-  content: "";
-  display: table;
-}
-footer > p:after {
-  clear: both;
-}
-footer > p:last-child {
-  margin-right: 0;
 }
