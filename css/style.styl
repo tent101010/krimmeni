@@ -12,62 +12,83 @@ body
 
 #bg
   background url(../images/bg.jpg) no-repeat 0 0
-  col(24)
+  center()
   height 850px
 
-section
-  col(24)
-  aside
-    col(5)
-    &:first-child
-      margin-right 0
-  div
-    col(14)
-    height 429px
-    margin-top 149px
-  strong
-    font-family:'TradeGothicW01-BoldCn20 675334';
-  a
-    color #f36e21
-    &:hover
-      color #fff
+header, section, footer
+  > div
+    center()
 
 header
   height 72px
   margin-top 30px
   margin-bottom 23px
-  > aside
+  div.logoLt
+    border-bottom:solid 1px #939598
     col(1)
-  > div.lt
-    col(3)
-    border-bottom:solid 1px #939598
     height 72px
-  > div.logo
-    background url(../images/logo.gif) no-repeat bottom
-    col(2)
-    height 94px
-  > div.tagline
+  div.logoRt
     border-bottom:solid 1px #939598
-    col(12)
+    col(1)
     height 72px
-    padding-top 42px
     margin-right 0
-  > div.pag
-    border-bottom:solid 1px #939598
-    col(5)
-    height 30px
-    margin-top 42px
+
+#logo
+  col(2)
+  height 95px
+
+#tagline
+  border-bottom:solid 1px #939598
+  col(12)
+  height 72px
+  padding-top 42px
+  margin-right 0
+
+nav
+  border-bottom:solid 1px #939598
+  col(6)
+  height 30px
+  margin-top 42px
+  a
+    background url(../images/sprite.png) no-repeat 0 0
+    display block
+    float left
+    height 17px
+    margin-right 7px
+    width 17px
+    &.off
+      background-position -25px -25px
+      &:hover
+        background-position -50px -50px
+
+section
+  > div
+    col(15)
+    height 429px
+    margin-top 149px
+    offset(3)
+    strong
+      font-family:'TradeGothicW01-BoldCn20 675334';
     a
-      background url(../images/sprite.png) no-repeat 0 0
-      display block
-      float left
-      height 17px
-      margin-right 7px
-      width 17px
-      &.off
-        background-position -25px -25px
-        &:hover
-          background-position -50px -50px
+      color #f36e21
+      whitespace no-wrap
+      &:hover
+        color #fff
+
+footer
+  > div
+    col(15)
+    center()
+    offset(3)
+    text-align center
+    > p
+      border-top:solid 1px #939598
+      padding-top 31px
+      span
+        whitespace nowrap
+
+.rt
+  col(6)
 
 h1
   font-family:'TradeGothicW01-BoldCn20 675334';
@@ -99,11 +120,3 @@ h3
   strong
     font-family:'TradeGothicW01-BoldCn20 675334';
     
-footer
-  text-align center
-  > aside
-    col(1)
-  > p
-    border-top:solid 1px #939598
-    col(22)
-    padding-top 31px
