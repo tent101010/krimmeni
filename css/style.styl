@@ -2,9 +2,29 @@
 @import 'jeet/goodies'
 @import 'jeet/typography'
 
+@font-face
+  font-family 'Conv_TradeGothicLTStd-Light'
+  src url('TradeGothicLTStd-Light.eot')
+  src local('x'), url('TradeGothicLTStd-Light.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family 'Conv_TradeGothicLTStd-Bold'
+  src url('TradeGothicLTStd-Bold.eot')
+  src local('x'), url('TradeGothicLTStd-Bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family 'Conv_TradeGothicLTStd-Cn18'
+  src url('TradeGothicLTStd-Cn18.eot')
+  src local('x'), url('TradeGothicLTStd-Cn18.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
 // Mobile
 bp()
-
 endbp()
 
 body
@@ -39,7 +59,7 @@ header
 
 #tagline
   border-bottom:solid 1px #939598
-  col(12)
+  col(14)
   height 72px
   padding-top 42px
   margin-right 0
@@ -63,12 +83,12 @@ nav
 
 section
   > div
-    col(15)
+    col(17)
     height 429px
-    margin-top 149px
+    margin-top 145px
     offset(3)
     strong
-      font-family:'TradeGothicW01-BoldCn20 675334';
+      font-weight bold
     a
       color #f36e21
       whitespace no-wrap
@@ -77,9 +97,8 @@ section
 
 footer
   > div
-    col(15)
+    col(24)
     center()
-    offset(3)
     text-align center
     > p
       border-top:solid 1px #939598
@@ -88,35 +107,22 @@ footer
         whitespace nowrap
 
 .rt
-  col(6)
+  col(4)
 
 h1
-  font-family:'TradeGothicW01-BoldCn20 675334';
-  /*
-  font-family:'Trade Gothic W01 Bold 2';
-  font-family:'Trade Gothic W01 Bold';
-  font-family:'Trade Gothic W01 Light';
-  font-family:'TradeGothicW01-LightObl';
-  font-family:'Trade Gothic W01 Roman';
-  font-family:'Trade Gothic W01 Obl';
-  font-family:'TradeGothicW01-BoldObl';
-  font-family:'TradeGothicW01-Bold2Obl';
-  font-family:'Trade Gothic W01 Cn 18';
-  font-family:'TradeGothicW01-Cn18Obl';
-  font-family:'TradeGothicW01-BoldCn20 675337';
-  font-family:'TradeGothicW01-Extended';
-  font-family:'TradeGothicW01-BoldExte';
-  */
-  font-size 54px
+  font-family:'Conv_TradeGothicLTStd-Bold'
+  font-size 56px
+  font-weight normal
 
 h2
-  font-size 26px
+  font-size 30px
+  font-weight normal
   margin-top 42px
 
 h3
   text-align center
-  font-family:'Trade Gothic W01 Cn 18';
-  font-size 18px
+  font-family:'Conv_TradeGothicLTStd-Cn18'
+  font-size 20px
+  font-weight normal
   strong
-    font-family:'TradeGothicW01-BoldCn20 675334';
-    
+    font-family:'Conv_TradeGothicLTStd-Bold'
