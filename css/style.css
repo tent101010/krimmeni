@@ -345,9 +345,6 @@ section > div:after {
 section > div:last-child {
   margin-right: 0;
 }
-section > div strong {
-  font-weight: bold;
-}
 section > div a {
   color: #f36e21;
   white-space: nowrap;
@@ -423,9 +420,14 @@ h1 {
   font-weight: normal;
 }
 h2 {
+  font-family: 'Conv_TradeGothicLTStd-Light';
   font-size: 30px;
   font-weight: normal;
   margin-top: 42px;
+}
+h2 strong {
+  font-family: 'Conv_TradeGothicLTStd-Bold';
+  font-weight: normal;
 }
 h3 {
   text-align: center;
