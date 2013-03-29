@@ -29,10 +29,4 @@ dist
 *.dmg
 *.log
 *.log.[0-9]*
-roastlog-[a-f0-9]
-rl.*.css
-rl.css
-qrc_resources.py
-db/mongodb/tmp
-db/snapshots
-
+raw/
