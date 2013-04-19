@@ -149,7 +149,7 @@ body {
   background: #020203 url("../images/bg_vert.png") repeat-x;
 }
 #bg {
-  background: url("../images/bg.jpg") no-repeat 0 0;
+  background: url("../images/bg_grey.jpg") no-repeat 0 0;
   *zoom: 1;
   max-width: 1410px;
   margin-left: auto;
