@@ -143,8 +143,6 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 705px), (max-device-width: 705px) {
-}
 body {
   background: #020203 url("../images/bg_vert.png") repeat-x;
 }
@@ -195,80 +193,46 @@ header {
   margin-top: 30px;
   margin-bottom: 23px;
 }
-header div.logoLt {
+header > div > div {
   border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
   float: left;
-  width: 2.127659574468085%;
+  width: 31.914893617021278%;
   margin-right: 2.127659574468085%;
-  *width: 2.0124113475177303%;
-  *margin-right: 2.083333333333333%;
-  height: 72px;
-}
-header div.logoLt:before,
-header div.logoLt:after {
-  content: "";
-  display: table;
-}
-header div.logoLt:after {
-  clear: both;
-}
-header div.logoLt:last-child {
-  margin-right: 0;
-}
-header div.logoRt {
-  border-bottom: solid 1px #939598;
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 2.127659574468085%;
-  margin-right: 2.127659574468085%;
-  *width: 2.0124113475177303%;
+  *width: 31.179078014184398%;
   *margin-right: 2.083333333333333%;
   height: 72px;
   margin-right: 0;
+  padding-left: 30px;
 }
-header div.logoRt:before,
-header div.logoRt:after {
+header > div > div:before,
+header > div > div:after {
   content: "";
   display: table;
 }
-header div.logoRt:after {
+header > div > div:after {
   clear: both;
 }
-header div.logoRt:last-child {
+header > div > div:last-child {
   margin-right: 0;
 }
 #logo {
-  *zoom: 1;
-  display: inline;
-  float: left;
-  width: 6.382978723404255%;
-  margin-right: 2.127659574468085%;
-  *width: 6.179078014184397%;
-  *margin-right: 2.083333333333333%;
+  border-bottom: solid 1px #939598;
   height: 95px;
-}
-#logo:before,
-#logo:after {
-  content: "";
-  display: table;
-}
-#logo:after {
-  clear: both;
-}
-#logo:last-child {
   margin-right: 0;
+}
+#logo img {
+  min-width: 141px;
 }
 #tagline {
   border-bottom: solid 1px #939598;
   *zoom: 1;
   display: inline;
   float: left;
-  width: 57.446808510638306%;
+  width: 31.914893617021278%;
   margin-right: 2.127659574468085%;
-  *width: 56.1790780141844%;
+  *width: 31.179078014184398%;
   *margin-right: 2.083333333333333%;
   font-family: 'Conv_TradeGothicLTStd-Cn18';
   height: 72px;
@@ -291,12 +255,14 @@ nav {
   *zoom: 1;
   display: inline;
   float: left;
-  width: 23.404255319148938%;
+  width: 31.914893617021278%;
   margin-right: 2.127659574468085%;
-  *width: 22.845744680851062%;
+  *width: 31.179078014184398%;
   *margin-right: 2.083333333333333%;
   height: 30px;
   margin-top: 42px;
+  padding-right: 40px;
+  text-align: right;
 }
 nav:before,
 nav:after {
@@ -311,11 +277,8 @@ nav:last-child {
 }
 nav a {
   background: url("../images/sprite.png") no-repeat 0 0;
-  display: block;
-  float: left;
-  height: 17px;
-  margin-right: 7px;
-  width: 17px;
+  padding-right: 24px;
+  padding-bottom: 2px;
 }
 nav a.off {
   background-position: -25px -25px;
@@ -437,4 +400,72 @@ h3 {
 }
 h3 strong {
   font-weight: bold;
+}
+@media screen and (max-width: 705px), (max-device-width: 705px) {
+section aside,
+section article,
+section > div,
+pre,
+#logo,
+#tagline,
+footer,
+nav {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  text-align: center;
+  border-bottom: none;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 20px;
+}
+header > div > div {
+  border-bottom: none;
+  height: 95px;
+  padding-left: 0;
+  width: 100%;
+}
+#logo img {
+  margin: auto;
+  border-bottom: none;
+}
+#tagline {
+  height: auto;
+  padding-top: 15px;
+}
+nav {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 2.127659574468085%;
+  *width: 97.84574468085106%;
+  *margin-right: 2.083333333333333%;
+  margin: 15px auto 0;
+  padding-right: 0;
+}
+nav:before,
+nav:after {
+  content: "";
+  display: table;
+}
+nav:after {
+  clear: both;
+}
+nav:last-child {
+  margin-right: 0;
+}
+section > div {
+  height: 100%;
+  margin-top: 30px;
+  text-align: left;
+}
+footer > div > p {
+  padding-top: 12px;
+}
 }
